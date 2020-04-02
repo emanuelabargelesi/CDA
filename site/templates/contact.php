@@ -106,6 +106,7 @@
                             </div>
                         </form>
                     <?php endif ?>
+                  <p class="py-5"><strong><u>Note:</strong></u> If you are having difficulties with our contact us form above, send us an email to info@bemoacademicconsulting.com (copy & paste the email address)</p>
                 </main>
             </div>
         </div>
