@@ -16,6 +16,9 @@
 
     <title><?= $page->metatitlecontact() ?></title>
     <meta name="description" content="<?= $page->metacontentcontact() ?>">
+    <?php if ($page->toggle() == 'true') : ?>    
+        <meta name="robots" content="noindex">
+    <?php endif ?>
 
 
 </head>

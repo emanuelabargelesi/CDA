@@ -7,50 +7,55 @@ columns:
       content:
         type: fields
         fields:
-           meta:
+
+            toggle:
+              label: Enable no index?
+              type: toggle
+
+            meta:
               label: Meta Settings
               type: headline
 
-           metatitle:
+            metatitle:
               label: Meta Title
               type: text
 
-           metacontent:
+            metacontent:
               label: Meta Description
               type: textarea
 
-           main:
+            main:
               label: Page Setting
               type: headline
 
-           background:
+            background:
               label: Cover Image. The first image will be the background of you page.
               type: files
 
-           center:
+            center:
               label: Page Header
               type: text
               required: true
 
-           overview:
+            overview:
               label: Section
               type: headline
 
-           section:
+            section:
               label: Section Title
               type: text
               required: true
 
-           sectionmenu:
+            sectionmenu:
               label: Section Menu Overview
               type: textarea
               required: true
 
-           sectionheadline:
+            sectionheadline:
               label: Sections Q & A
               type: headline
 
-           sectionmodules:
+            sectionmodules:
               label: Add Sections 
               type: structure
               modalsize: large

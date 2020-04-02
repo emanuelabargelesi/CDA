@@ -16,15 +16,21 @@
 
     <title><?= $page->metatitle() ?></title>
     <meta name="description" content="<?= $page->metacontent() ?>">
+    <?php if ($page->toggle() == 'true') : ?>    
+        <meta name="robots" content="noindex">
+    <?php endif ?>
 
 </head>
 
 <body>
+
     <?php
     $image = $page->background()->toFile();
     ?>
 
-    <div class="main-photo" style="background-image:url(<?php if ($image) {echo $image->url();} ?>)">
+    <div class="main-photo" style="background-image:url(<?php if ($image) {
+                                                            echo $image->url();
+                                                        } ?>)">
 
         <!-- Navbar-->
         <header class="header">
@@ -47,14 +53,14 @@
             </nav>
         </header>
 
-            <div class="pt-5">
-                <div class="py-5 mt-5">
-                    <div class="in-middle">
-                        <h2 class="display-4 centerTitle"><?= $page->center() ?></h2>
-                    </div>
+        <div class="pt-5">
+            <div class="py-5 mt-5">
+                <div class="in-middle">
+                    <h2 class="display-4 centerTitle"><?= $page->center() ?></h2>
                 </div>
             </div>
         </div>
+    </div>
 
     <main id="main_page">
         <div class="container-fluid pl-lg-5 pr-lg-5 pl-md-4 pr-md-4">
@@ -64,14 +70,14 @@
                         <p class="font-weight-bold" style="color:darkblue;"><?= $page->section() ?></p>
                         <p class="font-weight-bold">Overview:</p>
                         <ul class="ul-style">
-                                <li><?php echo $page->sectionmenu()->text()->kirbytext() ?></li>
+                            <li><?php echo $page->sectionmenu()->text()->kirbytext() ?></li>
                         </ul>
 
                         <div id="section">
-                        <?php foreach ($page->sectionmodules()->toStructure() as $section) : ?>
-                            <div class="font-weight-bold py-3"><?php echo $section->title()->html() ?></div>
+                            <?php foreach ($page->sectionmodules()->toStructure() as $section) : ?>
+                                <div class="font-weight-bold py-3"><?php echo $section->title()->html() ?></div>
                                 <div style="margin-bottom: 2em;"><?= $section->text()->kirbytext() ?></div>
-                            <?php endforeach ?>                        
+                            <?php endforeach ?>
                         </div>
                     </div>
                 </div>
@@ -93,17 +99,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
 
-<script>
-    $(function() {
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 10) {
-                $('.navbar').addClass('active');
-            } else {
-                $('.navbar').removeClass('active');
-            }
+    <script>
+        $(function() {
+            $(window).on('scroll', function() {
+                if ($(window).scrollTop() > 10) {
+                    $('.navbar').addClass('active');
+                } else {
+                    $('.navbar').removeClass('active');
+                }
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
+
 </html>
