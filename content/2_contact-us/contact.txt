@@ -1,0 +1,21 @@
+Title: Contact Us
+
+----
+
+Metatitlecontact: Meta Title
+
+----
+
+Metacontentcontact: Meta description example
+
+----
+
+Securedpageenabled: true
+
+----
+
+Securedpageroles: admin
+
+----
+
+Mailto: ebargelesi@gmail.com

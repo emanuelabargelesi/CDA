@@ -1,0 +1,39 @@
+title: Site
+
+
+tabs:
+
+  tab1:
+    label: Pages
+    preset: pages
+    unlisted: true
+  tab2:
+    label: Tokens
+    pages: false
+    fields:
+      facebookpixel:
+        width: 1/2
+        label: Facebook Pixel
+        type: textarea
+        buttons: false
+        font: monospace
+        size: large
+      googlepixel:
+        width: 1/2
+        label: Google Analytics
+        type: textarea
+        buttons: false
+        font: monospace
+        size: large
+
+      
+
+
+
+
+
+
+      
+
+
+

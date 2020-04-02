@@ -1,0 +1,187 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    transition: all 0.4s;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+/*.navbar-nav {
+    margin-bottom: 3em;
+}*/
+
+.img-brand {
+    height: 5em;
+}
+
+.navbar .nav-link {
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    text-decoration: underline;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+
+.navbar.active {
+    background: #fff;
+    opacity: 90%;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        color: #555;
+    }
+}
+
+.main-photo {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.in-middle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    padding: 10% 20px 20px 20px;
+    text-align: center;
+}
+
+.centerTitle {
+    font-size: 300%;
+    color: white;
+    letter-spacing: 6px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.centerTitle:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2.5em;
+    right: 2.5em;
+    border-top: 2px solid white;
+    z-index: -1;
+}
+
+
+/* Change title and background on small viewports */
+
+@media (max-width: 991.98px) {
+    .centerTitle {
+        font-size: 200%;
+    }
+    .main-photo {
+        height: 70vh;
+    }
+    .img-brand {
+        height: 70px;
+    }
+    .in-middle {
+        top: 40%;
+        padding: 0 20px 20px 20px;
+    }
+    .image_contact img {
+        width: 100vw;
+        margin-top: 3em;
+    }
+}
+
+#main_page a {
+    color: orange;
+}
+
+.ul-style {
+    list-style-type: none;
+    padding: 0;
+}
+
+#section ol,
+ul {
+    padding-left: 20px;
+}
+
+
+/*email*/
+
+.honeypot {
+    position: absolute;
+    left: -9999px;
+}
+
+
+/* contact form */
+
+.main_contact {
+    text-align: center;
+}
+
+input#name,
+input#email,
+textarea#text {
+    background-color: #d1d1d1;
+}
+
+.contact_group label {
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 12px;
+}
+
+.contact_info {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.contact_info u {
+    font-size: 12px;
+}
+
+footer {
+    background-color: darkblue;
+    color: white;
+    font-size: 12px;
+}
+
+footer a {
+    color: orange;
+}

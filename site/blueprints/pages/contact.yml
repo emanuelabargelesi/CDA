@@ -1,0 +1,35 @@
+title: Contact Us
+
+columns:
+  # main
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          meta:
+            label: Meta Settings
+            type: headline
+
+          metatitlecontact:
+            label: Meta Title
+            type: text
+
+          metacontentcontact:
+           label: Meta Description
+           type: textarea
+            
+  # sidebar
+  - width: 1/3
+    sections:
+        securityconfig:
+            type: fields
+            fields:
+                security: fields/kerli81.securedpages.pageconfiguration
+                mailto:
+                  label: Mail
+                  type: email
+        pages:
+            type: pages
+        files:
+            type: files

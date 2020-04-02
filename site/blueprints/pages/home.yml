@@ -1,0 +1,75 @@
+title: Protected Page
+
+columns:
+  # main
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+           meta:
+              label: Meta Settings
+              type: headline
+
+           metatitle:
+              label: Meta Title
+              type: text
+
+           metacontent:
+              label: Meta Description
+              type: textarea
+
+           main:
+              label: Page Setting
+              type: headline
+
+           background:
+              label: Cover Image. The first image will be the background of you page.
+              type: files
+
+           center:
+              label: Page Header
+              type: text
+              required: true
+
+           overview:
+              label: Section
+              type: headline
+
+           section:
+              label: Section Title
+              type: text
+              required: true
+
+           sectionmenu:
+              label: Section Menu Overview
+              type: textarea
+              required: true
+
+           sectionheadline:
+              label: Sections Q & A
+              type: headline
+
+           sectionmodules:
+              label: Add Sections 
+              type: structure
+              modalsize: large
+              fields:
+                title:
+                  label: Title
+                  type: text
+                text:
+                  label: Text
+                  type: textarea
+            
+  # sidebar
+  - width: 1/3
+    sections:
+        securityconfig:
+            type: fields
+            fields:
+                security: fields/kerli81.securedpages.pageconfiguration
+        files:
+            type: files
+
+
